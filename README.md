@@ -1,7 +1,10 @@
 # spring_kafka_producer
 spring boot simple kafka producer example
 
-# separate consumer project
+# 1. Run kafka project
+https://github.com/kimvykz/kafka_simpe_example
+
+# 2. Run consumer project
 https://github.com/kimvykz/kafka_simple_consumer.git
 
 # POST method API - /publish/satellites, requestBody
