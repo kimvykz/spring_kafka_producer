@@ -20,4 +20,24 @@ public class SatelliteController {
 
         return satelliteService.publishSatellite(requestSatelliteDTO);
     }
+
+    @PostMapping("/publish-with-callback/satellites")
+    public ResponseEntity<?> publishSatelliteWithCallback(@RequestBody RequestSatelliteDTO requestSatelliteDTO) {
+
+        return satelliteService.publishSatelliteWithCallback(requestSatelliteDTO);
+    }
+
+    @PostMapping("/publish-with-blocking/satellites")
+    public ResponseEntity<?> publishSatelliteWithBlocking(@RequestBody RequestSatelliteDTO requestSatelliteDTO) {
+
+        return satelliteService.publishSatelliteWithblocking(requestSatelliteDTO);
+    }
+
+    @PostMapping("/publish-with-dlq/satellites")
+    public ResponseEntity<?> publishSatelliteWithDlq(@RequestBody RequestSatelliteDTO requestSatelliteDTO) {
+
+        return satelliteService.publishSatelliteWithDlq(requestSatelliteDTO);
+    }
+
+
 }
